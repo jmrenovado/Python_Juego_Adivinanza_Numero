@@ -13,6 +13,9 @@ def juego_adivinanza():
 
     while not adivinado:
         adivinanza = input("Introduzca un número del 1 al 100: ")
+        if input("¿Desea salir del juego? (s/n): ").lower() == "s":
+            print("Gracias por jugar, ¡hasta la próxima!")
+            break
 
         if adivinanza.isdigit():
             adivinanza = int(adivinanza)
